@@ -1,0 +1,53 @@
+Assignment 1
+// TO find the sum of the numbers in the given string.
+
+string datas = "10_200_3_1";
+
+int sums = 0;
+string numbers = "";
+
+for (int i = 0; i < datas.Length; i++)
+{
+    if (datas[i] != '_')
+    {
+        numbers += datas[i];
+
+    }
+    else
+    {
+        sums += int.Parse(numbers);
+        numbers = "";
+              
+    }
+   
+
+}
+sums += int.Parse(numbers);
+
+Console.WriteLine(sums);
+
+// To draw  a rectangle using  asterik(*) only on its borders
+
+Console.Write("Enter the height of the rectangle ");
+int height = int.Parse(Console.ReadLine());
+
+ int width = 20;
+
+ for(int i = 0;i < height;i++)
+ {
+     for(int j = 0;j< width;j++)
+     {
+         if(i == 0 || i == height -1 ||  j == 0 || j == width-1  )
+         {
+             Console.Write("*");
+         }
+         else
+         {
+             Console.Write(" ");
+         }
+       
+        
+     }
+     Console.WriteLine();
+ } 
+
