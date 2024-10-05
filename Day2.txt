@@ -1,0 +1,55 @@
+//The frequency of words in a string occurances.
+
+ string text = "This is a really long long text";
+
+ string[] words = text.Split(' ');
+ // An array to store the counted words
+ string[] wordsFound = new string[words.Length];
+ int wordsCheckedCount = 0;
+
+ foreach (var word in words)
+ {
+     if (wordsFound.Contains(word))
+     {
+         continue;
+     }
+
+     int count = 0;
+     foreach (var item in words)
+     {
+         if (item == word)
+         {
+             count++;
+         }
+     }
+
+     wordsFound[wordsCheckedCount] = word;
+     wordsCheckedCount++;
+
+     Console.WriteLine($"{word}: {count}");
+ }
+
+ // if array size is odd 
+ //1,2,3,4,5 answer would be 2,1,3,5,4
+ // if it is even like  1,2,3,4  then 2,1,4,3
+
+ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+
+var firstHalf = numbers.Take(numbers.Length/2).Reverse().ToArray();
+var secondHalf = numbers.Skip(numbers.Length/2+1).Reverse().ToArray();
+
+firstHalf.CopyTo(numbers, 0);
+secondHalf.CopyTo(numbers,numbers.Length/2 + 1);
+Console.WriteLine(string.Join("",numbers));
+
+           
+int[] numberss = new int[] { 1, 2, 3, 4 };
+var firstsize = numberss.Take(numberss.Length / 2 ).Reverse().ToArray();
+var secondsize = numberss.Skip(numberss.Length / 2 ).Reverse().ToArray();
+
+int[] array = new int[numberss.Length];
+firstsize.CopyTo(array, 0);
+secondsize.CopyTo(array, numberss.Length/2);
+Console.WriteLine(string.Join("",array));
+
+

@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace FunctionsProblems
+{
+    internal class Problem
+    {
+        static void Main(string[] args)
+        { 
+            // program to check if a string is palindrome
+            string text = "MalayalaM";
+            var reverse = string.Concat(text.Reverse());
+            if(text== reverse)
+            {
+                Console.WriteLine("same");
+            }
+            
+
+            // Six methods of string concat and StringBuilder usage
+            //StringBuilder sb = new StringBuilder();
+             var largearray = new int[] {1,2,3,4,5};
+             var sb = new StringBuilder();
+             sb.AppendLine("Line 1");
+             sb.AppendLine("Line 2");
+
+             sb.Append("No new line");
+             sb.Append("No new Line");
+
+             sb.AppendLine();
+             sb.AppendFormat("My name is {0} {1}", "Gatha", "Reghunath");
+             foreach( var item in largearray )
+             {
+                 sb.AppendFormat("{0}",item);
+             }
+
+
+             var res = sb.ToString();
+             Console.WriteLine(res);
+            
+
+
+            // program to print the name in an array with index yaers old
+            
+             var array = new string[] { "gatha", "geethu", "mohan" };
+             var  sb = new StringBuilder();
+             foreach( var item in array)
+             {
+                var index = Array.IndexOf(array, item);
+                sb.AppendFormat("{0} is {1} years old  ",item,index );
+                sb.AppendLine();
+
+             }
+             var res = sb.ToString();
+            Console.WriteLine(res);
+
+
+
+        }
+    }
+}

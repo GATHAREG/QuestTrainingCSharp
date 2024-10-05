@@ -1,0 +1,112 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FunctionsProblems
+{
+    internal class Program
+    {
+        
+        // Function to  calculate the sum.
+        static void Calculation(int num1, int num2)
+        {
+            Console.WriteLine($"The sum is  {num1+num2}");
+
+        } 
+
+        static void Main(string[] args)
+        { 
+            // program to print the name of an array in uppercase
+           Console.WriteLine("Enter the name of people in an array:");
+             string[] array1 = new string[] {"gatha","geethu","mohan"};
+            Console.Write("Enter the text :");
+            string name = Console.ReadLine();
+            Console.Write("Displaying the Names in Uppercase ");
+             for(int i = 0;i < array1.Length; i++)
+             {
+                 Console.Write(array1[i].ToUpper() + " ");
+             } 
+            
+
+
+
+            /* program to replace a word with another
+                Console.Write("Enter the text :");
+                string name = Console.ReadLine();
+
+               Console.Write("Which word you want to replace:");
+               string word = Console.ReadLine().Trim().ToLower();
+               Console.Write("which word to be placed instead:");
+               string newWord = Console.ReadLine().Trim().ToLower();
+
+               Console.WriteLine(name.Trim().ToLower().Replace(word,newWord));
+            */
+
+
+            /*  Console.Write("The  ");
+             for (int i = 0; i < array1.Length; i++)
+             {
+                 var n = name.Trim().ToLower();
+                 if(array1[i].ToLower().Contains(n))
+                 {
+
+                     Console.Write(array1[i] + " ");
+
+                 }
+             } */
+          
+              //function calling 
+               Calculation(10, 12);
+              Calculation(22, 32);
+
+       //program to print a never ending calculator including the concept of single line functions
+            while (true)
+            {
+                Console.Write("Enter the first number:");
+                int num1 = int.Parse(Console.ReadLine());
+                Console.Write("Enter the second number:");
+                int num2 = int.Parse(Console.ReadLine());
+                Console.Write("Enter the operation you want to perform (+,-,*,/):");
+                string choice = Console.ReadLine();
+                switch (choice)
+                {
+                    case "+":
+                        PerformAdd(num1, num2);
+                        break;
+                    case "-":
+                        PerformSubtract(num1, num2);
+                        break;
+                    case "*":
+                        PerformMultiply(num1, num2);
+                        break;
+                    case "/":
+                        PerformDivison(num1, num2);
+                        break;
+                    default:
+                        // Exiting by return
+                        Console.WriteLine("Invalid Operation!");
+                       
+                        return;
+
+
+                }
+            } 
+              Console.ReadKey();
+
+        }
+        
+        static void PerformDivison(int num1, int num2) => Console.WriteLine($"The Quotient is {num1 / num2}");
+        static void PerformMultiply(int num1, int num2) => Console.WriteLine($"The product is {num1 * num2}");
+        static void PerformSubtract(int num1, int num2) => Console.WriteLine($"The difference is {num1 - num2}");
+        static void PerformAdd(int num1, int num2) => Console.WriteLine($"The sum is {num1 + num2}");
+        
+        
+
+
+
+
+    }
+}

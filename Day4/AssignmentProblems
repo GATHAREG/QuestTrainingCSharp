@@ -1,0 +1,162 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MajorProblems
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+          // program to replace numbers with its words and print it
+             var numbers = new string[] { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
+             string input = " one, 2, three, 4";
+             var words = input.Replace(" ", "").Split(',');
+             foreach (var word in words )
+             {
+                 if( word.Length <= 2)
+                 {
+                     int num = int.Parse(word);
+                     string text = numbers[num - 1];
+                     Console.WriteLine($"{text},");
+                 }
+                 else
+                 {
+                     Console.WriteLine($"{word},");
+
+                 }
+             } 
+
+
+            //program to swap case
+
+            string input = "HeLlO WoRlD";
+            var sb = new StringBuilder();
+
+            foreach (var item in input)
+            {
+                char c = item;
+                if (c >= 'a' && c <= 'z')
+                {
+                    // sb.Append((char)(c - 32));
+                    sb.Append((c.ToString().ToUpper()));
+                }
+                else if (c >= 'A' && c <= 'Z')
+                {
+                    // sb.Append((char)(c + 32));
+                    sb.Append(c.ToString().ToLower());
+                }
+
+            }
+
+            Console.WriteLine(sb.ToString());
+
+
+           //program to print patterns
+                    
+                    
+                    // *
+                     //* *
+                    // * * *
+                    // * * * *
+                    // * * * * *
+
+
+
+
+            Console.Write("Enter the no of rows:");
+            int rows = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+          /*   1
+             2 3
+            4 5 6
+            7 8 9 10 */
+
+            int count = 1;
+            for (int i = 0; i < rows - 1; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write($"{count} ");
+                    count++;
+                }
+                Console.WriteLine();
+            }
+        /*  1
+            1 2
+            1 2 3
+            1 2 3 4
+            1 2 3 4 5 */
+
+
+
+
+
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(j + 1 + " ");
+
+                }
+                Console.WriteLine();
+            }
+
+
+            //another method of builtins and conditional statements of swap case
+
+            string text = "heLlo WoRlD";
+            string s = "";
+            foreach (var chr in text)
+            {
+                char res = char.IsUpper(chr) ? char.ToLower(chr) : char.ToUpper(chr);
+                s = s + res;
+            }
+            Console.WriteLine(s);
+
+            int rw = 6;
+            int counts = 1;
+            for (int i = 0; i < rw; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("{0,3}",counts++);
+                }
+                Console.WriteLine();
+            } 
+
+            // find the vowels in s string and print it
+            
+            string name = "hi how are you";
+            char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
+            Console.Write("The vowels present in the given string are: ");
+            foreach (var item in name)
+            {
+                foreach(char c in vowels)
+                {
+                    if(char.ToLower(item)==c)
+                    {
+                        Console.Write($"{item}  ");
+                    }
+                }
+            }
+            Console.ReadKey();
+
+        }
+
+
+    }
+}
+
