@@ -1,0 +1,431 @@
+// builtin functions
+ --- Arrays----
+1. Array.Clear()
+Clears the contents of an array by setting all elements to the default value (e.g., 0 for integers, null for reference types).
+
+Syntax: Array.Clear(array, startIndex, length);
+EG:
+     int[] numbers = { 1, 2, 3, 4, 5 };
+     Array.Clear(numbers, 1, 2); 
+     // numbers = { 1, 0, 0, 4, 5 }
+
+2. Array.Find()
+Finds the first element in an array that matches a condition defined by a predicate.
+
+Syntax: Array.Find(array, predicate);
+EG:
+    Array.Find(numbers,x => x > 3);
+    //4
+
+3. Array.FindIndex()
+Finds the index of the first element in an array that matches a condition defined by a predicate.
+
+Syntax: Array.FindIndex(array, predicate);
+eg:
+   int[] numbers = { 1, 2, 3, 4, 5 };
+int index = Array.FindIndex(numbers, x => x == 4); 
+// index = 3
+
+4. Array.Resize()
+Changes the size of an array (note: it creates a new array internally, and the reference is updated).
+
+Syntax: Array.Resize(ref array, newSize);
+eg:
+   int[] numbers = {1,2,3,4};
+   Array.Resize(ref numbers,6);
+
+5. Array.Sort()
+Sorts the elements of an array in ascending order.
+
+Syntax: Array.Sort(array);
+eg;
+   int[] numbers = { 3, 1, 4, 5, 2 };
+Array.Sort(numbers); 
+// numbers = { 1, 2, 3, 4, 5 }
+
+6. Array.Reverse()
+Reverses the order of elements in the array.
+
+Syntax: Array.Reverse(array);
+eg:
+    int[] numbers = { 1, 2, 3, 4, 5 };
+   Array.Reverse(numbers); 
+// numbers = { 5, 4, 3, 2, 1 }
+
+7. Array.Copy()
+Copies a range of elements from one array to another.
+
+Syntax: Array.Copy(sourceArray, destinationArray, length);
+eg:
+int[] source = { 1, 2, 3, 4, 5 };
+int[] destination = new int[3];
+Array.Copy(source, destination, 3); 
+//{1,2,3}
+
+8.Array.BinarySearch()
+Searches for a specific element in a sorted array using binary search. Returns the index of the element, or a negative value if not found.
+
+Syntax: Array.BinarySearch(array, value);
+eg:
+int[] numbers = { 1, 2, 3, 4, 5 };
+int index = Array.BinarySearch(numbers, 4); 
+// index = 3
+
+9.Array.IndexOf()
+Returns the index of the first occurrence of a value in the array.
+
+Syntax: Array.IndexOf(array, value);
+int[] numbers = { 1, 2, 3, 4, 5 };
+int index = Array.IndexOf(numbers, 4); 
+// index = 3
+
+10.Array.ForEach()
+Performs an action on each element of the array.
+Syntax: Array.ForEach(array, action);
+int[] numbers = { 1, 2, 3 };
+Array.ForEach(numbers, x => Console.WriteLine(x*2));
+// Output: 
+// 1
+// 4
+// 6
+
+-----Strings--------
+1. Length
+Returns the number of characters in a string.
+eg:
+string name = "CSharp";
+int length = name.Length; // length = 6
+
+2. Split()
+Splits a string into an array of substrings based on a delimiter.
+eg:
+string sentence = "Hello World CSharp";
+string[] words = sentence.Split(' '); // words = { "Hello", "World", "CSharp" }
+
+3. StartsWith()
+Determines whether a string starts with a specified prefix.
+eg:
+string text = "Hello World";
+bool startsWithHello = text.StartsWith("Hello"); // true
+
+4. ToUpper()
+Converts a string to uppercase.
+eg:
+string text = "hello";
+string upper = text.ToUpper(); // upper = "HELLO"
+
+5. ToLower()
+Converts a string to lowercase.
+eg:
+string text = "HELLO";
+string lower = text.ToLower(); // lower = "hello"
+
+6. Equals()
+Determines whether two strings are equal.
+eg:
+string text1 = "Hello";
+string text2 = "hello";
+bool isEqual = text1.Equals(text2); // false 
+
+7. Trim()
+Removes leading and trailing white-space characters from the string.
+eg:
+string text = "  Hello World  ";
+string trimmed = text.Trim(); // trimmed = "Hello World"
+
+8. Concat()
+Concatenates (joins) two or more strings.
+eg:
+string firstName = "John";
+string lastName = "Doe";
+string fullName = string.Concat(firstName, " ", lastName); // fullName = "John Doe"
+
+9. Substring()
+Retrieves a substring from a string, starting from the specified index.
+eg:
+string text = "CSharpProgramming";
+string sub = text.Substring(6, 11); // sub = "Programming"
+
+10. Contains()
+Determines whether a string contains a specified substring.
+eg:
+string sentence = "Hello CSharp";
+bool containsCSharp = sentence.Contains("CSharp"); // true
+
+11. Replace()
+Replaces all occurrences of a specified substring with another string.
+eg:
+string text = "Hello World";
+string newText = text.Replace("World", "CSharp"); // newText = "Hello CSharp"
+
+12. IndexOf()
+Returns the index of the first occurrence of a character or substring.
+eg:
+string text = "Hello CSharp";
+int index = text.IndexOf('C'); // index = 6
+
+13. LastIndexOf()
+Returns the index of the last occurrence of a character or substring.
+eg:
+string text = "Hello CSharp CSharp";
+int lastIndex = text.LastIndexOf("CSharp"); // lastIndex = 12
+
+14. ToCharArray()
+Converts a string to an array of characters.
+eg:
+string text = "Hello";
+char[] chars = text.ToCharArray(); // chars = { 'H', 'e', 'l', 'l', 'o' }
+
+15. Join()
+Concatenates the elements of a string array, using a specified separator between each element.
+eg:
+string[] words = { "Hello", "World", "CSharp" };
+string sentence = string.Join(" ", words); // sentence = "Hello World CSharp"
+
+16. Remove()
+Deletes a specified number of characters starting at a specified index.
+eg:
+text = "Hello CSharp";
+string newText = text.Remove(5); // newText = "Hello"
+
+17. EndsWith()
+Checks if a string ends with a specified suffix.
+eg:
+string text = "Hello World";
+bool endsWithWorld = text.EndsWith("World"); // true
+
+18. PadLeft() and PadRight()
+Pads the string with spaces (or another specified character) to the left or right.
+eg:
+string text = "Hello";
+string padded = text.PadRight(10); // padded = "Hello"
+
+19. Format()
+Replaces the format items in a string with the string representation of corresponding objects.
+eg:
+string name = "John";
+int age = 30;
+string formattedString = string.Format("Name: {0}, Age: {1}", name, age); 
+// "Name: John, Age: 30"
+
+-----List----
+
+1. Add()
+Adds an object to the end of the List.
+eg:
+List<int> numbers = new List<int>();
+numbers.Add(1);
+numbers.Add(2); // numbers = { 1, 2 }
+
+2. AddRange()
+Adds the elements of the specified collection to the end of the List.
+eg:
+List<int> numbers = new List<int> { 1, 2 };
+numbers.AddRange(new int[] { 3, 4, 5 }); // numbers = { 1, 2, 3, 4, 5 }
+
+3. Remove()
+Removes the first occurrence of a specific object from the List.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3 };
+numbers.Remove(2); // numbers = { 1, 3 }
+
+4. RemoveAt()
+Removes the element at the specified index of the List.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3 };
+numbers.RemoveAt(0); // numbers = { 2, 3 }
+
+5. RemoveRange()
+Removes a range of elements from the List.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+numbers.RemoveRange(1, 2); // numbers = { 1, 4, 5 }
+
+6. Contains()
+Determines whether an element is in the List.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3 };
+bool containsTwo = numbers.Contains(2); // containsTwo = true
+
+7. Insert()
+Inserts an element into the List at the specified index.
+eg:
+List<int> numbers = new List<int> { 1, 2, 4 };
+numbers.Insert(2, 3); // numbers = { 1, 2, 3, 4 }
+
+8. InsertRange()
+Inserts elements of a collection into the List at the specified index.
+eg:
+List<int> numbers = new List<int> { 1, 4 };
+numbers.InsertRange(1, new int[] { 2, 3 }); // numbers = { 1, 2, 3, 4 }
+
+9. IndexOf()
+Returns the zero-based index of the first occurrence of a specific object.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 2 };
+int index = numbers.IndexOf(2); // index = 1 (first occurrence of 2)
+
+10. LastIndexOf()
+Returns the zero-based index of the last occurrence of a specific object.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 2 };
+int lastIndex = numbers.LastIndexOf(2); // lastIndex = 3 (last occurrence of 2)
+
+11. Sort()
+Sorts the elements of the List in ascending order.
+List<int> numbers = new List<int> { 3, 1, 4, 2 };
+numbers.Sort(); // numbers = { 1, 2, 3, 4 }
+
+12. Reverse()
+Reverses the order of the elements in the entire List.
+List<int> numbers = new List<int> { 1, 2, 3, 4 };
+numbers.Reverse(); // numbers = { 4, 3, 2, 1 }
+
+13. ToArray()
+Copies the elements of the List to a new array.
+List<int> numbers = new List<int> { 1, 2, 3 };
+int[] array = numbers.ToArray(); // array = { 1, 2, 3 }
+
+14. Find()
+Finds the first element that matches the conditions defined by a predicate.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 4 };
+int result = numbers.Find(x => x > 2); // result = 3 (first number greater than 2)
+
+15. FindAll()
+Finds all elements that match the conditions defined by a predicate.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 4 };
+List<int> result = numbers.FindAll(x => x > 2); // result = { 3, 4 }
+
+16. FindIndex()
+Returns the index of the first element that matches the conditions defined by a predicate.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 4 };
+int index = numbers.FindIndex(x => x > 2); // index = 2 (first index where x > 2)
+
+17. FindLast()
+Finds the last element that matches the conditions defined by a predicate.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 4 };
+int result = numbers.FindLast(x => x > 2); // result = 4 (last number greater than 2)
+
+18. FindLastIndex()
+Returns the index of the last element that matches the conditions defined by a predicate.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 4 };
+int index = numbers.FindLastIndex(x => x > 2); // index = 3 (last index where x > 2)
+
+19. Count
+Returns the number of elements in the List.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3 };
+int count = numbers.Count; // count = 3
+
+20. Clear()
+Removes all elements from the List.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3 };
+numbers.Clear(); // numbers = { }
+
+21.BinarySearch()
+Searches the entire sorted List for an element using binary search.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+int index = numbers.BinarySearch(3); // index = 2 (index of 3)
+
+22. ForEach()
+Performs the specified action on each element of the List.
+eg:
+List<int> numbers = new List<int> { 1, 2, 3 };
+numbers.ForEach(x => Console.WriteLine(x)); 
+// Output: 1, 2, 3
+----------Dictionary---
+1.. Add()
+Adds the specified key and value to the dictionary.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string>();
+dict.Add(1, "Apple");
+dict.Add(2, "Banana"); // dict = { {1, "Apple"}, {2, "Banana"} }
+
+2. Remove()
+Removes the value with the specified key from the dictionary.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+dict.Remove(1); // dict = { {2, "Banana"} }
+
+3. ContainsKey()
+Determines whether the dictionary contains the specified key.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+bool hasKey = dict.ContainsKey(1); // hasKey = true
+
+4. ContainsValue()
+Determines whether the dictionary contains a specific value.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+bool hasValue = dict.ContainsValue("Banana"); // hasValue = true
+
+5. TryGetValue()
+Gets the value associated with the specified key. Returns true if the key exists; otherwise, false.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+if (dict.TryGetValue(1, out string value)) {
+    Console.WriteLine(value); // Output: "Apple"
+}
+
+6. Clear()
+Removes all keys and values from the dictionary.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+dict.Clear(); // dict = { }
+
+7. Count
+Returns the number of key/value pairs in the dictionary.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+int count = dict.Count; // count = 2
+
+8. Keys
+Gets a collection containing the keys in the dictionary.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+ICollection<int> keys = dict.Keys; // keys = { 1, 2 }
+
+9. Values
+Gets a collection containing the values in the dictionary.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+ICollection<string> values = dict.Values; // values = { "Apple", "Banana" }
+
+10. ToArray()
+Converts the dictionary into an array of KeyValuePair<TKey, TValue>.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+KeyValuePair<int, string>[] array = dict.ToArray();
+// array = { [1, "Apple"], [2, "Banana"] }
+
+11. Equals()
+Determines whether the current dictionary is equal to another dictionary.
+eg:
+Dictionary<int, string> dict1 = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+Dictionary<int, string> dict2 = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+bool areEqual = dict1.Equals(dict2); // areEqual = true
+
+12.ElementAt()
+Returns the element at a specified index.
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Apple" }, { 2, "Banana" } };
+KeyValuePair<int, string> element = dict.ElementAt(0); // element = {1, "Apple"}
+
+13.Max() and Min()
+Returns the maximum or minimum element based on a specific condition (for either keys or values).
+eg:
+Dictionary<int, string> dict = new Dictionary<int, string> { { 1, "Banana" }, { 2, "Apple" }, { 3, "Cherry" } };
+var maxKey = dict.Max(kvp => kvp.Key); // maxKey = 3
+var minValue = dict.Min(kvp => kvp.Value); // minValue = "Apple"
+
+
+
+
+
