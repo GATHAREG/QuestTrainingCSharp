@@ -1,0 +1,108 @@
+Which of the following is a value type in C#?
+
+ans:Int
+
+Question 2 of 20
+
+ Which of the following is NOT a value type in C#?
+ans:
+class
+Question 3 of 20
+
+ Which of the following keywords is used to handle exceptions in C#?
+ans:
+try
+
+Question 4 of 20
+ Which of the following is a reference type in C#?
+ans:
+objec
+Question 5 of 20
+
+ Which of the following is a correct way to initialize a dictionary in C#?
+ans:
+Dictionary<int, string> dict = new Dictionary<int, string>();
+
+Question 6 of 20
+
+What will be the output of the following code? int? a = null; Console.WriteLine(a ?? 0);
+ans:
+0
+
+Question 7 of 20
+
+What does the params keyword allow in C#?
+ans:
+Pass a variable number of arguments
+Question 8 of 20
+Which of the following data types cannot store a null value?
+ans:
+int
+Question 9 of 20
+
+ Which method in C# is used to split a string into an array?
+ans:
+Split()
+Question 10 of 20
+ Which of the following collection types maintains key-value pairs in C#?
+ans:
+Dictionary
+
+Question 11 of 20
+ans:
+What is the default accessibility of class members in C#?
+ans:
+private
+
+Question 12 of 20
+
+7. Which keyword is used to pass arguments by reference in C#?
+ans:
+ref
+Question 13 of 20
+ What is the size of an int in C#?
+ans:
+4 bytes
+
+Question 14 of 20
+
+
+Which method is used to add elements to a List in C#?
+ans:
+Add()
+Question 15 of 20
+ Which of these keywords is used to make a variable nullable?
+ans:
+?
+Question 16 of 20
+
+ Which of the following is immutable in C#?
+ans:
+String
+
+Question 17 of 20
+ Which of the following allows duplicate keys in C#?
+A.
+List
+B.
+Dictionary
+C.
+Array
+D. ans:
+None of the above
+Question 18 of 20
+ Which of the following allows dynamic resizing in C#?
+ans:
+List
+
+Question 19 of 20
+
+
+ Which of the following is a correct declaration of a method with default parameters?
+Ans:
+void MyMethod(int x = 10)
+
+Question 20 of 20
+ What is the default value of a nullable integer (int?) in C#?
+ans:
+null
