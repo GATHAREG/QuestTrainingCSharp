@@ -1,0 +1,213 @@
+OOPS:-
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects".
+These objects represent real-world entities, and they have properties (attributes) and methods (behaviors). OOP organizes software design around data (objects) and the actions that operate on them. In C#, OOP is a core concept that allows developers to create modular, reusable, and maintainable code.
+
+Key Concepts of OOP
+Classes and Objects:
+
+Class: A blueprint or template for creating objects. It defines properties (fields) and behaviors (methods) that the objects created from the class will have.
+Object: An instance of a class. It is a real-world entity with data and functionality.
+Example:
+public class Car
+{
+    public string Model;
+    public int Year;
+
+    public void Drive()
+    {
+        Console.WriteLine($"{Model} is driving.");
+    }
+}
+
+// Creating an object
+
+Car myCar = new Car();
+myCar.Model = "Toyota";
+myCar.Year = 2021;
+myCar.Drive();
+
+Encapsulation:
+
+Encapsulation refers to bundling data (fields) and methods (functions) that operate on the data into a single unit (class) and restricting direct access to some of the object’s components.
+This is achieved using access modifiers like private, public, protected, etc.
+Example:
+public class Person
+{
+    private string name;
+
+    public string GetName()
+    {
+        return name;
+    }
+
+    public void SetName(string newName)
+    {
+        name = newName;
+    }
+}
+
+// Encapsulating the name field
+
+Person person = new Person();
+person.SetName("John");
+Console.WriteLine(person.GetName());
+
+Inheritance:
+
+Inheritance allows a new class to inherit properties and methods from an existing class. This promotes code reuse and logical hierarchy.
+The new class is called a derived class, and the existing class is called a base class.
+Example:
+public class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Eating");
+    }
+}
+
+public class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Barking");
+    }
+}
+
+Dog dog = new Dog();
+dog.Eat();  // Inherited from Animal class
+dog.Bark();
+
+Polymorphism:
+
+Polymorphism allows one interface or method to represent different behaviors in different contexts. It is of two types: compile-time (method overloading) and runtime (method overriding) polymorphism.
+Example of Overriding:
+public class Shape
+{
+    public virtual void Draw()
+    {
+        Console.WriteLine("Drawing a shape");
+    }
+}
+
+public class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a circle");
+    }
+}
+
+Shape shape = new Circle();
+shape.Draw();  // Outputs: Drawing a circle
+
+Abstraction:
+
+Abstraction hides the complexity by exposing only essential features and interfaces of an object, allowing the user to work with them without understanding the inner details.
+Achieved through abstract classes and interfaces in C#.
+Example:
+public abstract class Animal
+{
+    public abstract void MakeSound();
+}
+
+public class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Bark");
+    }
+}
+
+Animal myDog = new Dog();
+myDog.MakeSound();  // Outputs: Bark
+
+Benefits of OOP over Function-Oriented Programming
+
+Modularity: Code is organized into classes, making it easier to manage and understand. Each object can represent an individual part of the system, promoting modularity.
+
+Reusability: Inheritance promotes code reuse, allowing developers to build upon existing classes without rewriting code.
+
+Maintainability: Encapsulation ensures that objects control their internal states, which makes it easier to modify and maintain code.
+
+Flexibility and Scalability: Polymorphism allows for methods to be easily modified and extended.
+
+Real-World Modeling: OOP maps real-world problems into software designs by representing entities as objects, making the system more intuitive and natural.
+
+
+Pros and Cons of OOP
+
+Pros:
+
+Data Security: Encapsulation helps in protecting data by allowing controlled access through getters and setters.
+
+Code Reusability: Inheritance reduces redundancy and promotes code reuse.
+
+Scalability: OOP makes it easier to manage complex and large software systems.
+
+Extensibility: Polymorphism and abstraction allow systems to be easily extended and adapted to new requirements.
+
+Cons:
+
+Complexity: OOP can introduce complexity, especially for smaller, simpler applications where function-oriented programming might be more straightforward.
+
+Performance Overhead: OOP introduces abstraction layers and additional processing, which can sometimes result in performance overhead compared to procedural approaches.
+
+Memory Consumption: Objects can consume more memory due to their structure and inheritance features.
+
+Major Features of OOP
+
+Data Abstraction: Hides internal implementation details and exposes only necessary aspects.
+
+Example: Abstract classes and interfaces, where implementation details are hidden, and only essential functionalities are exposed to users.
+
+Encapsulation: Restricts direct access to an object’s data, making it safer and more secure.
+
+Example: Private variables with public getter and setter methods.
+
+Inheritance: Allows a class to inherit the properties and behavior of another class.
+
+Example: A Vehicle class could be inherited by a Car class to add more specific details.
+Polymorphism: Same method can behave differently depending on the object it is acting upon.
+
+Example: A Shape class may have a Draw method, which behaves differently for Circle and Rectangle.
+Example: Bank Account System
+
+public class BankAccount
+{
+    private decimal balance;
+
+    public void Deposit(decimal amount)
+    {
+        balance += amount;
+    }
+
+    public virtual void Withdraw(decimal amount)
+    {
+        balance -= amount;
+    }
+
+    public decimal GetBalance()
+    {
+        return balance;
+    }
+}
+
+public class SavingsAccount : BankAccount
+{
+    public override void Withdraw(decimal amount)
+    {
+        if (amount <= GetBalance())
+        {
+            base.Withdraw(amount);
+        }
+        else
+        {
+            Console.WriteLine("Insufficient balance.");
+        }
+    }
+}
+
+
+Encapsulation: The balance field is private, and access is controlled through methods.
+Inheritance: SavingsAccount inherits from BankAccount.
+Polymorphism: Withdraw is overridden in the SavingsAccount class to implement specific withdrawal behavior.
