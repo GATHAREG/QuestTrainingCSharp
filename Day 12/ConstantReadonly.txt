@@ -1,0 +1,110 @@
+1. const (Constant)
+---------------------------------
+What is it?
+A constant is a fixed value that cannot change. Think of it like a label for something that will never ever change during the program’s lifetime.
+
+When do you use it?
+You use const when you know the value will always be the same every time the program runs. Examples: Pi (3.14), number of days in a week (7).
+
+How does it work?
+
+It's set when you write your code.
+It does not get stored in memory separately. Instead, every time you use it, the value is hardcoded into the program by the compiler.
+Memory: It doesn't take up space in memory at runtime; the compiler replaces it with the value during the compilation.
+
+class MyClass
+{
+    public const int DaysInWeek = 7; // Can't change this value ever
+}
+
+Console.WriteLine(MyClass.DaysInWeek); // Output: 7
+In the example above, DaysInWeek is a constant, so it's fixed to 7 forever. You can’t change it.
+
+2. readonly
+-----------------------------
+What is it?
+A readonly variable is like a one-time setup. You can set its value once, but only when the object is being created (in the constructor). Once it’s set, you cannot change it anymore.
+
+When do you use it?
+You use readonly when you need a value that will be different for each object but shouldn't change after it's been set. For example, a car’s VIN number (vehicle identification number) might be different for each car, but once it's set for a car, it never changes.
+
+How does it work?
+
+It's set when the object is created, either when you declare it or inside the constructor.
+It’s specific to each object; every object can have its own readonly value.
+Memory: It takes up memory because each object can have its own value.
+
+class Car
+{
+    public readonly string VIN; // Vehicle Identification Number
+
+    public Car(string vin)
+    {
+        VIN = vin; // Set only when the car is created
+    }
+}
+
+var car1 = new Car("123456");
+var car2 = new Car("789012");
+
+Console.WriteLine(car1.VIN); // Output: 123456
+Console.WriteLine(car2.VIN); // Output: 789012
+Here, the VIN is assigned when each car object is created. You cannot change the VIN once the car is created.
+
+3. static readonly
+----------------------------
+What is it?
+A static readonly is a combination of static and readonly. It’s a value that you can set once for the class, and all objects share it. But once it’s set, it cannot be changed.
+
+When do you use it?
+Use it when you need a value that’s shared across all objects of a class but can be set dynamically (in a static constructor). For example, a database connection string that you set once when the program starts, and then all parts of the program use that same value.
+
+How does it work?
+
+It's set once in the static constructor (the code that runs once when the class is used).
+It's shared across all instances of the class.
+After it's set, it cannot be changed again.
+Memory: It’s stored once for the class, and all objects share the same memory for this value.
+
+class Database
+{
+    public static readonly string ConnectionString;
+
+    static Database()
+    {
+        ConnectionString = "Server=myServer;Database=myDB;"; // Set once
+    }
+}
+
+Console.WriteLine(Database.ConnectionString); // Output: Server=myServer;Database=myDB;
+Here, the ConnectionString is set once in the static constructor, and all parts of the program use the same connection string.
+
+4. Static Variables
+-------------------------------------
+What is it?
+A static variable belongs to the class, not the object. This means all objects share this variable. If you change it in one object, all other objects will see the new value too.
+
+When do you use it?
+Use static when you want a value to be shared across all objects. For example, a counter to keep track of how many objects have been created from a class.
+
+How does it work?
+
+It’s declared as static and shared across all instances of the class.
+It can be changed, and the change is visible to all objects.
+Memory: Only one copy of the variable exists in memory for the class, regardless of how many objects are created.
+
+class Counter
+{
+    public static int count = 0; // Shared across all objects
+
+    public Counter()
+    {
+        count++; // Increment count whenever an object is created
+    }
+}
+
+var obj1 = new Counter();
+var obj2 = new Counter();
+
+Console.WriteLine(Counter.count); // Output: 2
+In this example, count is shared across all instances. So, each time a Counter object is created, the same count variable is incremented
