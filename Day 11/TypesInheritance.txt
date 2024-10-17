@@ -1,0 +1,175 @@
+//Types of inheritance
+Inheritance is one of the key features of OOPs, and C# language is a modern object-oriented programming language.
+What is Inheritance 
+Acquiring (taking) the properties of one class into another is called inheritance. 
+Code reusability is one of the key features of OOPs, and it is achieved via inheritance.
+ Using inheritance, one or more classes can derive from an existing class. The existing class is called a base class, and the inherited class is called a derived or inherited class. 
+ Base class - the class from which features are to be inherited into another class.
+Derived class - the class that is inherited from the base class.
+Types of inheritance:-
+
+Single Inheritance: A class inherits from one base class.
+Multilevel Inheritance: A class is derived from another derived class.
+Hierarchical Inheritance: Multiple classes inherit from a single base class.
+Multiple Inheritance (using Interfaces): A class can implement multiple interfaces, mimicking multiple inheritance.
+Single Inheritance: A class inherits from one base class.
+
+
+1. Single Inheritance
+In single inheritance, a class (derived class) inherits from one base class.
+
+
+// Base class
+class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Animal is eating");
+    }
+}
+
+// Derived class
+class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Dog is barking");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Dog dog = new Dog();
+        dog.Eat();  // Inherited from Animal class
+        dog.Bark(); // Dog's own method
+    }
+}
+
+2. Multilevel Inheritance
+In multilevel inheritance, a class is derived from a class which is already derived from another class.
+
+// Base class
+class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Animal is eating");
+    }
+}
+
+// Derived class from Animal
+class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Dog is barking");
+    }
+}
+
+// Derived class from Dog
+class Puppy : Dog
+{
+    public void Play()
+    {
+        Console.WriteLine("Puppy is playing");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Puppy puppy = new Puppy();
+        puppy.Eat();  // Inherited from Animal
+        puppy.Bark(); // Inherited from Dog
+        puppy.Play(); // Puppy class' own method
+    }
+}
+
+3. Hierarchical Inheritance
+In hierarchical inheritance, multiple classes inherit from a single base class.
+
+// Base class
+class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Animal is eating");
+    }
+}
+
+// Derived class 1
+class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Dog is barking");
+    }
+}
+
+// Derived class 2
+class Cat : Animal
+{
+    public void Meow()
+    {
+        Console.WriteLine("Cat is meowing");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+        
+        dog.Eat();  // Inherited from Animal
+        dog.Bark(); // Dog's own method
+
+        cat.Eat();  // Inherited from Animal
+        cat.Meow(); // Cat's own method
+    }
+}
+
+
+4. Multiple Inheritance (via Interfaces)
+C# does not support multiple inheritance with classes, but you can achieve similar functionality using interfaces. 
+A class can implement multiple interfaces.
+
+// Interface 1
+interface IAnimal
+{
+    void Eat();
+}
+
+// Interface 2
+interface ICanBark
+{
+    void Bark();
+}
+
+// Class implementing multiple interfaces
+class Dog : IAnimal, ICanBark
+{
+    public void Eat()
+    {
+        Console.WriteLine("Dog is eating");
+    }
+
+    public void Bark()
+    {
+        Console.WriteLine("Dog is barking");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Dog dog = new Dog();
+        dog.Eat();  // Implemented from IAnimal
+        dog.Bark(); // Implemented from ICanBark
+    }
+}
