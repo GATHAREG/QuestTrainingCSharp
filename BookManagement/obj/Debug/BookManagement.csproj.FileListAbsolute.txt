@@ -1,0 +1,10 @@
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\bin\Debug\BookManagement.exe.config
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\bin\Debug\BookManagement.exe
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\bin\Debug\BookManagement.pdb
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\bin\Debug\Newtonsoft.Json.dll
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\bin\Debug\Newtonsoft.Json.xml
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\obj\Debug\BookManagement.csproj.AssemblyReference.cache
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\obj\Debug\BookManagement.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\obj\Debug\BookMana.AEF0CC0B.Up2Date
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\obj\Debug\BookManagement.exe
+C:\EmployeeManagementQuest\EmployeeManagement\BookManagement\obj\Debug\BookManagement.pdb
