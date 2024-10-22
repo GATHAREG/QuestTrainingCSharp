@@ -1,0 +1,7 @@
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppPhoneBook\bin\Debug\ConsoleAppPhoneBook.exe.config
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppPhoneBook\bin\Debug\ConsoleAppPhoneBook.exe
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppPhoneBook\bin\Debug\ConsoleAppPhoneBook.pdb
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppPhoneBook\obj\Debug\ConsoleAppPhoneBook.csproj.AssemblyReference.cache
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppPhoneBook\obj\Debug\ConsoleAppPhoneBook.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppPhoneBook\obj\Debug\ConsoleAppPhoneBook.exe
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppPhoneBook\obj\Debug\ConsoleAppPhoneBook.pdb
