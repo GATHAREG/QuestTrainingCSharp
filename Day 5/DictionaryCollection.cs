@@ -102,6 +102,7 @@ namespace Day5ListProblem
                 Console.WriteLine();   
             }
             // search for an id 
+            
             Console.WriteLine();
             Console.Write("Enter the id to search:");
             string ids = Console.ReadLine();

@@ -1,0 +1,662 @@
+1.How do you define a constant value in C#?
+A.
+static
+B.
+readonly
+C.
+const
+D.
+final
+ans: Const
+Question 2 of 50
+
+
+Which data structure does C# Queue<T> implement
+A.
+First In First Out (FIFO)
+B.
+Last In First Out (LIFO)
+C.
+Tree-based
+D.
+Graph-based
+
+Ans.First In First Out (FIFO)
+Question 3 of 50
+
+
+Which statement is used to terminate a loop in C#?
+A.
+break
+B.
+continue
+C.
+return
+D.
+exit
+
+ans: break
+
+Question 4 of 50
+
+
+What is the output of the following code?
+
+csharp
+
+Copy code
+
+int x = 5;
+
+int y = x++;
+
+Console.WriteLine(y);
+A.
+5
+B.
+6
+C.
+0
+D.
+Compilation error
+ans:5
+Question 5 of 50
+
+
+What is the default value of a bool variable in C#?
+A.
+true
+B.
+false
+C.
+null
+D.
+0
+ans:false
+Question 6 of 50
+Points
+1 / 1
+
+Which of these is a correct way to declare a delegate in C#?
+A.
+delegate void MyDelegate(int x);
+B.
+public void MyDelegate();
+C.
+delegate class MyDelegate;
+D.
+event delegate MyDelegate;
+ans:delegate void MyDelegate(int x);
+Question 7 of 50
+
+
+What is boxing in C#?
+A.
+Converting a reference type to a value type
+B.
+Converting a value type to a reference type
+C.
+Declaring a class
+D.
+Assigning a null value
+
+ans:Converting a value type to a reference type
+Question 8 of 50
+
+
+Which of these is an immutable type in C#?
+A.
+List<T>
+B.
+Array
+C.
+String
+D.
+Dictionary<TKey, TValue>
+ans:String
+Question 9 of 50
+
+
+Which keyword is used to define an interface in C#?
+A.
+class
+B.
+interface
+C.
+struct
+D.
+abstract
+ans:interface
+Question 10 of 50
+Points
+1 / 1
+
+Which collection class allows the fastest lookup based on a key?
+A.
+ArrayList
+B.
+Queue
+C.
+Dictionary ans:
+D.
+LinkedList
+Question 11 of 50
+Points
+1 / 1
+
+Which of the following is the correct way to define a single-line comment in C#?
+A.
+/* Comment */
+B.
+-- Comment
+C.
+// Comment ans:
+D.
+# Comment
+Question 12 of 50
+Points
+1 / 1
+
+What is the purpose of the abstract keyword in C#?
+A.
+To define a class that cannot be instantiated ans:
+B.
+To make a method optional
+C.
+To implement multiple interfaces
+D.
+To create a partial class
+Question 13 of 50
+Points
+1 / 1
+
+Which of these types is a reference type?
+A.
+int
+B.
+char
+C.
+double
+D.
+string ans:
+Question 14 of 50
+Points
+1 / 1
+
+How do you handle exceptions in C#?
+A.
+try-catch ans:
+B.
+try-finally
+C.
+throw
+D.
+catch-finally
+Question 15 of 50
+Points
+1 / 1
+
+What is the default return type of a constructor in C#?
+A.
+void
+B.
+int
+C.
+class
+D.
+None (constructors do not return values) ans:
+Question 16 of 50
+Points
+1 / 1
+
+Which keyword is used to invoke the base class constructor in a derived class?
+A.
+base ans:
+B.
+super
+C.
+this
+D.
+default
+Question 17 of 50
+Points
+1 / 1
+
+What is the correct way to declare a variable in C#?
+A.
+var int x = 5;
+B.
+int x = 5; ans:
+C.
+x = 5 int;
+D.
+int x : 5;
+Question 18 of 50
+Points
+1 / 1
+
+What does static keyword mean in C#?
+A.
+The member is associated with the class rather than any instance ans:
+B.
+The method can be called asynchronously
+C.
+The class is not inheritable
+D.
+The member cannot be accessed outside its class
+Question 19 of 50
+Points
+1 / 1
+
+Which of the following is not a valid keyword in C#?
+A.
+switch
+B.
+goto
+C.
+struct
+D.
+implement ans:
+Question 20 of 50
+Points
+1 / 1
+
+What does the is keyword check in C#?
+A.
+If two objects are the same instance
+B.
+If an object is of a particular type ans:
+C.
+If two variables have the same value
+D.
+If an object implements an interface
+Question 21 of 50
+Points
+1 / 1
+
+Which operator is used to access members of a class in C#?
+A.
+->
+B.
+. ans:
+C.
+::
+D.
+:
+Question 22 of 50
+Points
+1 / 1
+
+Which access modifier allows access to a member from any part of the code?
+A.
+private
+B.
+internal
+C.
+protected
+D.
+public ans:
+Question 23 of 50
+Points
+1 / 1
+
+What will be the result of the expression 5 / 2 in C#?
+A.
+2.5
+B.
+2 ans:
+C.
+3
+D.
+Compilation error
+Question 24 of 50
+Points
+1 / 1
+
+Which method from System.Object class is used to create a shallow copy of an object?
+A.
+Clone() ans:
+B.
+GetType()
+C.
+Equals()
+D.
+ToString()
+Question 25 of 50
+Points
+1 / 1
+
+What is a partial class in C#?
+A.
+A class that can be split into multiple files ans:
+B.
+A class with no complete implementation
+C.
+A class that cannot be inherited
+D.
+A class with abstract methods
+Question 26 of 50
+Points
+1 / 1
+
+What does the params keyword do in C#?
+A.
+Passes an argument by reference
+B.
+Allows a variable number of arguments ans:
+C.
+Makes a parameter optional
+D.
+Specifies a return type
+Question 27 of 50
+Points
+1 / 1
+
+What is the purpose of the await keyword in C#?
+A.
+To create a synchronous method
+B.
+To pause execution of a method until the awaited task completes ans:
+C.
+To delay a task
+D.
+To make a method execute immediately
+Question 28 of 50
+Points
+1 / 1
+
+Which of these collections is ordered in C#?
+A.
+Dictionary
+B.
+Queue
+C.
+List ans:
+D.
+HashSet
+Question 29 of 50
+Points
+1 / 1
+
+What is a tuple in C#?
+A.
+A value type that can store multiple values of different types ans:
+B.
+A collection of related methods
+C.
+A loop structure
+D.
+A pointer to a memory location
+Question 30 of 50
+Points
+1 / 1
+
+What type of method can be overridden in a derived class?
+A.
+static
+B.
+virtual ans:
+C.
+private
+D.
+sealed
+Question 31 of 50
+Points
+1 / 1
+
+Which of the following is the correct way to define a property in C#?
+A.
+public int Age { get; set; } ans:
+B.
+public Age int { get; set; }
+C.
+int public { get; set; }
+D.
+public { get; set; } int Age;
+Question 32 of 50
+Points
+1 / 1
+
+Which of the following is NOT a valid C# data type?
+A.
+int
+B.
+string
+C.
+char
+D.
+number ans:
+Question 33 of 50
+Points
+1 / 1
+
+Which keyword in C# is used to indicate that a class implements an interface?
+A.
+extends
+B.
+implements
+C.
+inherits
+D.
+None (use : for inheritance) ans:
+Question 34 of 50
+Points
+1 / 1
+
+What is an indexer in C#?
+A.
+A type of collection
+B.
+A way to overload operators
+C.
+A way to access elements of a class using an index ans:
+D.
+A keyword to iterate through a collection
+Question 35 of 50
+Points
+1 / 1
+
+What is the difference between == and .Equals() in C#?
+A.
+== compares object references, .Equals() compares values ans:
+B.
+== compares values, .Equals() compares object references
+C.
+Both are the same
+D.
+.Equals() compares static members
+Question 36 of 50
+Points
+1 / 1
+
+What is the purpose of the using statement in C#?
+A.
+To import namespaces ans:
+B.
+To dispose of objects after usage
+C.
+To define a method
+D.
+To declare an exception handler
+Question 37 of 50
+Points
+1 / 1
+
+What does the new keyword do in C#?
+A.
+Creates a new object ans:
+B.
+Replaces a method in the base class
+C.
+Declares a static variable
+D.
+Casts a variable to a new type
+Question 38 of 50
+Points
+1 / 1
+
+What does the this keyword represent in C#?
+A.
+The current instance of the class ans:
+B.
+The base class
+C.
+The global namespace
+D.
+The parent class
+Question 39 of 50
+Points
+1 / 1
+
+Which method must be implemented when using IEnumerator<T> in C#?
+A.
+MoveNext() ans:
+B.
+Add()
+C.
+Remove()
+D.
+Clone()
+Question 40 of 50
+Points
+1 / 1
+
+Which keyword is used to inherit a class in C#?
+A.
+implements
+B.
+inherits
+C.
+extends
+D.
+: ans:
+Question 41 of 50
+Points
+1 / 1
+
+What is the difference between ref and out parameters in C#?
+A.
+ref requires initialization before use, out does not ans:
+B.
+out requires initialization before use, ref does not
+C.
+Both are the same
+D.
+ref can only be used with value types
+Question 42 of 50
+Points
+1 / 1
+
+Which of the following is the correct way to declare an array in C#?
+A.
+int[] arr = new int[5]; ans:
+B.
+int arr[5];
+C.
+int arr = new array[5];
+D.
+array int arr[5];
+Question 43 of 50
+Points
+1 / 1
+
+What does the lock keyword do in C#?
+A.
+Ensures a section of code is thread-safe ans:
+B.
+Prevents modification of a variable
+C.
+Stops execution of a loop
+D.
+Pauses a thread
+Question 44 of 50
+Points
+1 / 1
+
+What does the default keyword do in C#?
+A.
+Returns the default value of a type ans:
+B.
+Declares a default property
+C.
+Assigns a null value
+D.
+Specifies an optional parameter
+Question 45 of 50
+Points
+1 / 1
+
+Which access modifier restricts access to the current class only?
+A.
+public
+B.
+protected
+C.
+internal
+D.
+private ans:
+Question 46 of 50
+Points
+1 / 1
+
+What does the null keyword represent in C#?
+A.
+An object of type null
+B.
+A value that does not exist ans:
+C.
+A default value for objects
+D.
+An integer zero
+Question 47 of 50
+Points
+1 / 1
+
+What keyword is used to make a class non-inheritable in C#?
+A.
+final
+B.
+sealed ans:
+C.
+private
+D.
+static
+Question 48 of 50
+Points
+1 / 1
+
+What is the readonly keyword used for in C#?
+A.
+To define a constant variable
+B.
+To create a variable whose value can only be assigned at declaration or in the constructor ans;
+C.
+To define a static variable
+D.
+To create an immutable class
+Question 49 of 50
+Points
+1 / 1
+
+What is the default value of an int in C#?
+A.
+1
+B.
+null
+C.
+0  ans:
+D.
+undefined
+Question 50 of 50
+Points
+1 / 1
+
+Which loop continues executing as long as a condition is true?
+A.
+for
+B.
+foreach
+C.
+while  ans:
+D.
+switch
