@@ -1,0 +1,7 @@
+C:\EmployeeManagementQuest\EmployeeManagement\EvaluationTwo\obj\Debug\EvaluationTwo.csproj.AssemblyReference.cache
+C:\EmployeeManagementQuest\EmployeeManagement\EvaluationTwo\obj\Debug\EvaluationTwo.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementQuest\EmployeeManagement\EvaluationTwo\bin\Debug\EvaluationTwo.exe.config
+C:\EmployeeManagementQuest\EmployeeManagement\EvaluationTwo\bin\Debug\EvaluationTwo.exe
+C:\EmployeeManagementQuest\EmployeeManagement\EvaluationTwo\bin\Debug\EvaluationTwo.pdb
+C:\EmployeeManagementQuest\EmployeeManagement\EvaluationTwo\obj\Debug\EvaluationTwo.exe
+C:\EmployeeManagementQuest\EmployeeManagement\EvaluationTwo\obj\Debug\EvaluationTwo.pdb
