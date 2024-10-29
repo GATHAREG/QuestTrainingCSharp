@@ -1,0 +1,115 @@
+• HTML stands for Hyper Text Markup Language
+
+• Most widely used language on Web to develop web pages.
+
+• Advantages of learning HTML include : Web site creation, web designing, optimization etc
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is the document title</title>
+</head>
+<body>
+<h1>This is just the content heading</h1>
+<p> This is just the content paragraph text </p></body>
+</html>
+
+<!– Single line comments -->
+
+<!--
+Multiline comment
+Can be written like this
+-->
+
+<!DOCTYPE html> - Defines the HTML version and type of the document.
+
+<html> - Root element that contains all HTML content.
+
+<head> - Contains metadata, title, links to CSS, and other head elements.
+
+<title> - Sets the title displayed on the browser tab.
+
+<body> - Contains the main content of the HTML document.
+
+<h1> to <h6> - Define headings, from most important (<h1>) to least important (<h6>).
+
+<p> - Represents a paragraph of text.
+
+<a href=""> - Creates a hyperlink to other pages or sections.
+
+<img src="" alt=""> - Embeds an image with source and alternative text.
+
+<div> - Defines a container or division for block elements.
+
+<span> - Used for inline elements to apply styles or group text.
+
+<ul> and <ol> - Define unordered (bulleted) and ordered (numbered) lists.
+
+<li> - List item, used within <ul> or <ol> for each entry.
+<table> - Creates a table structure.
+
+<tr> - Table row, used within a <table>.
+
+<td> - Table cell, represents data within a <tr>.
+
+<th> - Table header cell, used in tables for headings.
+
+<form> - Container for user input elements.
+
+<input type=""> - Collects user data; types include text, password, checkbox, etc.
+
+<button> - Represents a clickable button.
+
+<br> - Inserts a line break within text.
+
+<hr> - Creates a horizontal line, often used for thematic breaks.
+
+<strong> - Defines important or bold text.
+
+<em> - Emphasizes text, typically renders as italic.
+
+<meta> - Provides metadata about the document, like charset and viewport settings.
+
+<link rel=""> - Links external resources, such as CSS files.
+<script> - Embeds JavaScript or links to external JavaScript files.
+<b> - Bold text
+
+
+<i>- - Italic text
+
+<mark>-- Marked text
+
+<small>-- Smaller text
+
+<del>- - Deleted text
+
+<ins>- - Inserted text
+
+<sub> -- Subscript text
+
+<sup>--- Superscript text
+
+• To embed elements inside a page:
+<audio>- To include an audio in the web page
+
+<video>- To include a video in the web page
+
+<image>- To display an image in the page
+
+<iFrame>- To display a web page within a web page
+
+non-breaking space &nbsp; Useful to include spaces
+
+< less than -&lt;
+
+> greater than -&gt;
+
+& ampersand -&amp;
+
+" double quotation mark -&quot;
+
+' single quotation mark -&apos;
+
+© copyright -&copy;
+
+® registered trademark -&reg;

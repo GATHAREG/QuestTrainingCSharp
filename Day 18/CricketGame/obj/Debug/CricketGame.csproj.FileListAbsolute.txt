@@ -1,0 +1,7 @@
+C:\EmployeeManagementQuest\EmployeeManagement\CricketGame\bin\Debug\CricketGame.exe.config
+C:\EmployeeManagementQuest\EmployeeManagement\CricketGame\bin\Debug\CricketGame.exe
+C:\EmployeeManagementQuest\EmployeeManagement\CricketGame\bin\Debug\CricketGame.pdb
+C:\EmployeeManagementQuest\EmployeeManagement\CricketGame\obj\Debug\CricketGame.csproj.AssemblyReference.cache
+C:\EmployeeManagementQuest\EmployeeManagement\CricketGame\obj\Debug\CricketGame.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementQuest\EmployeeManagement\CricketGame\obj\Debug\CricketGame.exe
+C:\EmployeeManagementQuest\EmployeeManagement\CricketGame\obj\Debug\CricketGame.pdb

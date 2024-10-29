@@ -1,0 +1,7 @@
+C:\EmployeeManagementQuest\EmployeeManagement\MinsSweeper\bin\Debug\MinsSweeper.exe.config
+C:\EmployeeManagementQuest\EmployeeManagement\MinsSweeper\bin\Debug\MinsSweeper.exe
+C:\EmployeeManagementQuest\EmployeeManagement\MinsSweeper\bin\Debug\MinsSweeper.pdb
+C:\EmployeeManagementQuest\EmployeeManagement\MinsSweeper\obj\Debug\MinsSweeper.csproj.AssemblyReference.cache
+C:\EmployeeManagementQuest\EmployeeManagement\MinsSweeper\obj\Debug\MinsSweeper.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementQuest\EmployeeManagement\MinsSweeper\obj\Debug\MinsSweeper.exe
+C:\EmployeeManagementQuest\EmployeeManagement\MinsSweeper\obj\Debug\MinsSweeper.pdb

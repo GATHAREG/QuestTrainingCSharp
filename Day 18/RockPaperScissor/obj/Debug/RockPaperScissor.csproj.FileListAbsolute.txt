@@ -1,0 +1,7 @@
+C:\EmployeeManagementQuest\EmployeeManagement\RockPaperScissor\bin\Debug\RockPaperScissor.exe.config
+C:\EmployeeManagementQuest\EmployeeManagement\RockPaperScissor\bin\Debug\RockPaperScissor.exe
+C:\EmployeeManagementQuest\EmployeeManagement\RockPaperScissor\bin\Debug\RockPaperScissor.pdb
+C:\EmployeeManagementQuest\EmployeeManagement\RockPaperScissor\obj\Debug\RockPaperScissor.csproj.AssemblyReference.cache
+C:\EmployeeManagementQuest\EmployeeManagement\RockPaperScissor\obj\Debug\RockPaperScissor.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementQuest\EmployeeManagement\RockPaperScissor\obj\Debug\RockPaperScissor.exe
+C:\EmployeeManagementQuest\EmployeeManagement\RockPaperScissor\obj\Debug\RockPaperScissor.pdb
