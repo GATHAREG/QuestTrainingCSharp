@@ -1,0 +1,173 @@
+SDLC
+The Software Development Life Cycle (SDLC) is a structured process used by software developers and project managers to design, develop, test, and deploy a software product. SDLC helps ensure that the software meets requirements, is delivered on time, stays within budget, and has a high level of quality.
+
+Phases of SDLC
+Requirement Analysis and Gathering
+
+In this initial phase, project requirements are gathered from stakeholders. Teams analyze what the client needs, define project goals, and document requirements. Techniques like interviews, questionnaires, or analyzing existing systems are used.
+System Design
+
+The requirements from the previous phase are used to create a system design. This phase defines the software’s architecture, including design documents, interface designs, and data flows. The goal is to provide a blueprint for developers to follow.
+Implementation (Coding)
+
+In this phase, developers write the actual code based on the design documents. It’s a crucial part of SDLC, as the developers follow coding guidelines, implement best practices, and use chosen programming languages to build the software.
+Testing
+
+Once coding is complete, the software goes through rigorous testing to find and fix bugs or issues. Various testing levels are used, including unit testing, integration testing, and system testing, to ensure the software works as expected.
+Deployment
+
+After successful testing, the software is deployed to a production environment where end-users can start using it. This phase may involve additional steps, like creating a deployment plan, setting up servers, and managing configuration.
+Maintenance
+
+After deployment, the maintenance phase ensures the software remains functional and up-to-date. It includes bug fixes, updates, and enhancements to meet evolving user needs.
+
+
+
+An SRS (Software Requirements Specification) document is a comprehensive description of the intended purpose, functionality, and behavior of a software application. It acts as a formal agreement between stakeholders (such as clients, users, and developers) and the development team, laying out what the software will do and how it will meet user needs. The SRS is crucial in guiding the entire software development lifecycle, ensuring that all parties have a clear understanding of the project requirements.
+
+What an SRS Document Contains
+An SRS document generally includes the following sections:
+
+
+
+Purpose: Describes the purpose of the document and its intended audience.
+Scope: Outlines the scope of the software, including major goals, objectives, and limits.
+Definitions, Acronyms, and Abbreviations: Defines any specific terms or acronyms used within the document.
+References: Lists all references, such as related documents, research materials, or other specifications.
+Overview: Provides a high-level summary of what the system will accomplish.
+Overall Description
+
+Product Perspective: Explains the context within which the product will operate, possibly as a part of a larger system.
+Product Functions: Lists major functions and features the product will provide.
+User Characteristics: Describes the intended user base, their experience level, and how they will interact with the product.
+Constraints: Lists any limitations or constraints, such as regulatory requirements, hardware limitations, or dependencies.
+Assumptions and Dependencies: Describes any assumptions about the product, external factors, or system dependencies that could impact the development.
+System Features and Requirements
+
+Functional Requirements: Detailed specifications of what the system should do, including:
+Use cases
+System inputs and expected outputs
+Interaction sequences
+Non-Functional Requirements: Attributes related to the system's operation rather than its functionality, such as:
+Performance (response times, processing speed)
+Usability (ease of use, user interface requirements)
+Reliability (uptime, error rates)
+Security (access controls, data protection)
+Compliance (legal and regulatory requirements)
+External Interface Requirements
+
+Defines how the software will interact with other systems, hardware, or users. This includes:
+User interfaces (UI/UX guidelines, screen layouts)
+Hardware interfaces (specific hardware dependencies)
+Software interfaces (interactions with other software or systems)
+Communication interfaces (network protocols, APIs)
+Other Specific Requirements
+
+Data Requirements: Specifies data handling, storage needs, and database design considerations.
+Performance Requirements: Details the system’s expected performance under specific conditions.
+Security Requirements: Outlines security considerations, like authentication, authorization, and data encryption.
+Quality Attributes: Additional quality requirements, like portability, scalability, and adaptability.
+Appendix (Optional)
+
+Additional information, diagrams, or explanations that help clarify the main content.
+Why an SRS is Necessary
+Clear Communication: An SRS serves as a single, agreed-upon reference point that ensures all stakeholders and the development team have the same understanding of the project requirements.
+
+Guiding Development: Developers use the SRS to understand what to build and how it should perform. It eliminates ambiguity and reduces the risk of scope creep (unexpected changes in the project scope).
+
+Basis for Validation and Testing: The SRS provides a clear basis for creating test cases and verifying that the final product meets specified requirements, making it easier to catch issues early.
+
+Improved Project Management: By defining scope, features, and limitations upfront, the SRS allows for better planning, resource allocation, and timeline estimation, leading to smoother project execution.
+
+Change Management: If requirements change, the SRS provides a structured way to assess and document those changes and evaluate their impact on the project timeline and budget.
+
+
+Differences Between Unit Testing, Integration Testing, and Acceptance
+Testing
+● Unit Testing:
+○ Tests individual components or methods in isolation, ensuring each part
+functions correctly.
+○ Focuses on testing small pieces of code, typically written by developers.
+○ Example: Testing a function that calculates a discount percentage without any
+dependencies on other modules.
+● Integration Testing:
+○ Tests how different modules or components work together.
+○ Ensures data flows correctly across interfaces and that modules interact as
+expected.
+○ Example: After testing the discount function, you would test it with the billing
+module to ensure the final calculation is correct.
+● Acceptance Testing:
+○ Validates the entire system against business requirements and is often
+performed by end-users.
+○ Ensures the software meets user needs and functions as expected in
+real-world scenarios.
+○ Example: A retailer tests the entire sales system, including discounts, taxes,
+and billing, to confirm it works as intended for end-users.
+
+classical waterfall module● Definition: The Waterfall Model is a traditional software development model where
+each phase is completed sequentially.
+● Phases:
+○ Requirement Analysis: Collects requirements to form a detailed SRS
+document.
+○ System Design: Based on the SRS, the system is architected and designed.
+○ Implementation: The design is coded into the actual software product.
+○ Integration and Testing: Tests are conducted to verify functionality and
+system integration.
+○ Deployment: The final product is delivered to the user environment.
+○ Maintenance: Post-deployment support to address any issues or
+enhancements.
+● Limitations:
+○ Lack of flexibility makes it hard to adapt if requirements change mid-project.
+○ Works best when requirements are clear from the beginning, which is rare in
+complex, evolving projects.
+● Use Cases: Best suited for projects with well-defined requirements and limited
+changes, such as smaller internal tools or embedded systems.
+
+Project Planning
+● Definition: Project planning involves creating a roadmap for completing a project
+within defined constraints of scope, time, and cost.
+● Components of Project Planning:
+○ Scope Definition: Identifies what is included in the project and what is not.
+○ Task Breakdown: Divides the project into tasks and sub-tasks (often
+represented as a Work Breakdown Structure).
+○ Scheduling: Defines timelines, deadlines, and milestones.
+○ Resource Allocation: Assigns roles, responsibilities, and resources to each
+task.
+○ Budgeting: Estimates costs associated with resources and time.
+○ Risk Management: Identifies potential risks and plans mitigation strategies.
+● Importance:
+○ A solid project plan helps manage time, costs, and quality, ensuring
+successful project delivery.
+○ Mitigates the risk of scope creep, missed deadlines, and budget overruns.
+
+Risks Associated with Software Development
+● Technical Risks:
+○ Relate to the technology stack and the feasibility of implementing certain
+functionalities.
+○ Example: Choosing a new or unfamiliar technology can lead to unexpected
+technical challenges or integration issues.
+Project Risks:
+○ Include issues with resources, time, and scope that may lead to project
+delays or cancellations.
+○ Example: Underestimating the time required to complete a task or facing
+unexpected delays.
+● Operational Risks:
+○ Issues arising from management and workflow processes.
+○ Example: Poor project management practices, like inadequate
+communication or lack of project tracking tools, can lead to disorganization
+and inefficiency.
+● Market Risks:
+○ Changes in the market can make the project irrelevant or reduce its value.
+○ Example: A competing product could release similar features before your
+project is completed.
+● Security Risks:
+○ Risks associated with potential data breaches, unauthorized access, or failure
+to comply with security standards.
+○ Example: Sensitive data may be compromised if the system lacks proper
+encryption or access controls.
+● Mitigation Strategies:
+○ Conducting regular risk assessments and reviews.
+○ Implementing clear, measurable goals.
+○ Ensuring good communication practices among all team members.
+○ Using project management tools to track progress and manage risks
+proactively.
