@@ -1,0 +1,7 @@
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppEchoServer\bin\Debug\ConsoleAppEchoServer.exe.config
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppEchoServer\bin\Debug\ConsoleAppEchoServer.exe
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppEchoServer\bin\Debug\ConsoleAppEchoServer.pdb
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppEchoServer\obj\Debug\ConsoleAppEchoServer.csproj.AssemblyReference.cache
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppEchoServer\obj\Debug\ConsoleAppEchoServer.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppEchoServer\obj\Debug\ConsoleAppEchoServer.exe
+C:\EmployeeManagementQuest\EmployeeManagement\ConsoleAppEchoServer\obj\Debug\ConsoleAppEchoServer.pdb
