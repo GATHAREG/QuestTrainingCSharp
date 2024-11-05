@@ -1,0 +1,185 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleAppArrayDescending
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        { 
+        ////{
+        ////    int[] numbers = { 1, 2, 3, 4, 6, 7 };
+
+        ////    for (int i = 0; i < numbers.Length; i++)
+        ////    {
+        ////        for (int j = i + 1; j < numbers.Length; j++)
+        ////        {
+        ////            if (numbers[i] < numbers[j])
+        ////            {
+        ////                int temp = numbers[i];
+        ////                numbers[i] = numbers[j];
+        ////                numbers[j] = temp;
+        ////            }
+        ////        }
+        ////    }
+        //    //Console.WriteLine(string.Join(",", numbers));
+
+        //    //string msg = "hello world";
+        //    //for (int i = msg.Length - 1; i >= 0; i--)
+        //    //{
+        //    //    Console.Write(msg[i]);
+        //    //}
+           
+
+        //    //string s = "Hello, World! Welcome to the world of Python programming";
+        //    //string[] words = s.Split(new char[] {' ',',','!'}, StringSplitOptions.RemoveEmptyEntries);
+        //    //int count = words.Count(x => x.Equals("world", StringComparison.OrdinalIgnoreCase));
+        //    //Console.WriteLine(count);
+
+        //    //count of each word
+
+        //    string str = "hi hello  good morning and have a good day";
+        //    //different approach
+        //    var result = str.ToLower()
+        //        .Split(' ')
+        //        .GroupBy(x => x);
+        //    foreach( var item in result)
+        //    {
+        //        Console.WriteLine(item.Key ,item.Count());
+        //    }
+
+
+        //    string[] words = str.Split(new char[] { ' ', ',', '!' }, StringSplitOptions.RemoveEmptyEntries);
+        //    Dictionary<string, int> wordCount = new Dictionary<string, int>();
+            
+        //    foreach (var word in words)
+        //    {
+        //        if (wordCount.ContainsKey(word))
+        //        {
+        //            wordCount[word]++;
+        //        }
+        //        else
+        //        {
+        //            wordCount[word] = 1;
+        //        }
+
+
+        //    }
+        //    foreach(var word in wordCount)
+        //    {
+        //        Console.WriteLine($"{word.Key}: {word.Value}");
+        //    }
+
+
+
+        //    //remove the duplicates
+
+        //    var res = str.ToLower()
+        //       .Split(' ')
+        //       .Select(x => x)
+        //       .Distinct();
+
+
+        //    Console.WriteLine(string.Join(",",res));
+
+        //    //prime
+
+        //    int n = 10;
+        //    bool flag = true;
+        //    if (n < 1)
+        //    {
+        //        flag = false;
+        //    }
+        //    for(int i = 2;i<n/2;i++)
+        //    {
+        //        if(n%i == 0)
+        //        {
+        //            flag = false;
+        //            break;
+        //        }
+                
+        //    }
+        //    Console.WriteLine(flag?"Prime":"Not Prime");
+
+        //    //most and laest charcater  with count
+
+        //    string st = "good morning";
+        //   
+        //    var characterGroup = st
+        //    .GroupBy(c => c);
+            
+
+        //    var most = characterGroup
+        //  .OrderByDescending(x => x.Count())
+        //  .First();
+
+        //    Console.WriteLine($"Most occurring  '{most.Key}'  {most.Count()} ");
+
+       
+        //    var min = characterGroup.OrderBy(x=>x.Count()).First();
+        //    Console.WriteLine($"Least occuring {min.Key}, {min.Count()}");
+
+
+        //    //anagrams
+        //    string s1 = "listen";
+        //    string s2 = "silent";
+        //    bool flagg = false;
+        //    if(s1.Length == s2.Length)
+        //    {
+        //        char[] c1 = s1.ToCharArray();
+        //        char[] c2 = s2.ToCharArray();
+        //        Array.Sort(c1);
+        //        Array.Sort(c2);
+
+        //         string sortedString1 = c1.ToString();
+        //        string sortedString2 = c2.ToString();
+
+        //        if(sortedString1.Equals(sortedString2))
+        //        {
+        //            flagg = true;
+        //        }
+        //    }
+        //    Console.WriteLine(flagg?"ANAGRAM":"NOT ANAGRAM");
+
+            //find the missing number
+            
+            Console.Write("Enter the array size");
+
+            int size = int.Parse(Console.ReadLine());
+
+            int[] array = new int[size];
+
+            Console.WriteLine("Enter the elements");
+            for(int i = 0; i < size; i++)
+            {
+                array[i] = int.Parse(Console.ReadLine()) ;
+            }
+            int sum = (size * (size+ 1)) / 2;
+
+            for (int i = 0; i < size; i++)
+            {
+                sum -= array[i];
+            }
+            Console.WriteLine($"The missing number is{sum}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
