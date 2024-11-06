@@ -1,0 +1,11 @@
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\bin\Debug\ConsoleAppNoteTaking.exe.config
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\bin\Debug\ConsoleAppNoteTaking.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\bin\Debug\ConsoleAppNoteTaking.pdb
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\bin\Debug\log4net.dll
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\bin\Debug\log4net.pdb
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\bin\Debug\log4net.xml
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\obj\Debug\ConsoleAppNoteTaking.csproj.AssemblyReference.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\obj\Debug\ConsoleAppNoteTaking.csproj.CoreCompileInputs.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\obj\Debug\ConsoleA.F8861FC5.Up2Date
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\obj\Debug\ConsoleAppNoteTaking.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppNoteTaking\obj\Debug\ConsoleAppNoteTaking.pdb
