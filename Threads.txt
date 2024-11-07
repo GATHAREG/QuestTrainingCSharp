@@ -1,0 +1,107 @@
+Note on thread:
+In C#, the lifecycle of a thread includes several states, representing the various phases a thread goes through from creation to termination. Here’s an overview of each state and how a thread transitions between them:
+
+1. Unstarted
+Definition: This is the initial state of a thread after it has been created, but before it has been started.
+Transition: When a new thread is created using new Thread(), it remains in the Unstarted state until Start() is called.
+Example Transition: Unstarted → Started when Start() is called.
+2. Running
+Definition: The thread enters this state after the Start() method is called and begins executing code.
+Transition:
+The thread moves into the Running state after it is started.
+It may transition to Blocked, Waiting, or Stopped based on its activity and conditions encountered during execution.
+Example Transition: Unstarted → Running when Start() is called.
+3. Blocked
+Definition: A thread enters the Blocked state if it attempts to access a resource currently unavailable, such as trying to enter a locked section of code.
+Transition:
+From Running to Blocked if it encounters a lock on a resource.
+Back to Running when the resource becomes available.
+Example Transition: Running → Blocked when waiting for a locked resource.
+4. Waiting
+Definition: The Waiting state is where a thread is paused, waiting for a specific condition to be met (e.g., when calling methods like Thread.Sleep() or Monitor.Wait()).
+Transition:
+From Running to Waiting when Thread.Sleep() or Wait() is called.
+Returns to Running after the specified time elapses or when it is notified to continue.
+Example Transition: Running → Waiting when Thread.Sleep(1000) is called.
+5. Stopped
+Definition: This is the final state of a thread, indicating it has completed execution.
+Transition:
+A thread moves to the Stopped state after it finishes executing its assigned task or is explicitly terminated.
+Once a thread is in the Stopped state, it cannot be restarted.
+Example Transition: Running → Stopped when the thread finishes execution.
+Summary of Transitions:
+Unstarted → Running: When Start() is called on a new thread.
+Running → Blocked: When waiting for a resource that another thread is currently using.
+Running → Waiting: When Sleep(), Wait(), or another pausing mechanism is used.
+Blocked/Waiting → Running: When the resource is released or the waiting period ends.
+Running → Stopped: When the thread completes execution or is terminated.
+Thread Safety
+Definition: Thread safety means that a piece of code can be safely called from multiple threads at the same time without causing issues like data corruption or unexpected behavior.
+
+Ensuring Thread Safety in C#:
+
+Immutable Data: Immutable objects (those that can't be changed after creation) are naturally thread-safe.
+Synchronization: Use synchronization mechanisms like lock, Monitor, Mutex, Semaphore, or ReaderWriterLock to control access to shared resources.
+Thread-Local Storage: Each thread has its own instance of data, so it doesn’t interfere with other threads.
+Synchronization Mechanisms
+C# provides several mechanisms to manage access to shared resources across multiple threads:
+
+lock:
+
+Used to block other threads from accessing a resource until the current thread is done with it.
+Example:
+
+private static object lockObj = new object();
+lock (lockObj)
+{
+    // Code that only one thread can execute at a time
+}
+Mutex:
+
+A system-wide lock, allowing for synchronization across processes, not just threads within the same process.
+Example:
+
+Mutex mutex = new Mutex();
+mutex.WaitOne(); // Wait for the mutex
+// Critical section code
+mutex.ReleaseMutex(); // Release the mutex
+Semaphore:
+
+Allows a specified number of threads to access a resource at the same time. Useful for throttling resource access.
+Example:
+
+Semaphore semaphore = new Semaphore(2, 5); // Allows up to 5 threads
+semaphore.WaitOne(); // Acquire
+// Critical section code
+semaphore.Release(); // Release
+Deadlocks
+Definition: A deadlock occurs when two or more threads are waiting for each other to release resources, causing each to be indefinitely blocked.
+
+Scenario: Thread A locks Resource 1 and waits for Resource 2, while Thread B locks Resource 2 and waits for Resource 1. Neither thread can proceed.
+
+Preventing Deadlocks:
+
+Lock Ordering: Always acquire locks in a specific order.
+Timeouts: Use timeouts to avoid waiting indefinitely.
+Monitor TryEnter: Use Monitor.TryEnter instead of lock, allowing threads to give up after some time.
+Race Conditions
+Definition: A race condition occurs when two or more threads access shared data simultaneously, and at least one of the threads modifies the data, leading to unpredictable results.
+
+Identifying and Avoiding Race Conditions:
+
+Use Synchronization: Use lock or other mechanisms to synchronize access to shared data.
+Atomic Operations: Use Interlocked class for atomic operations like incrementing a counter.
+Thread-Local Storage: Store data locally for each thread if shared access isn’t necessary.
+Thread Pool
+Definition: The thread pool in C# is a collection of reusable threads managed by the .NET runtime, used to perform tasks efficiently.
+
+Differences from Individual Threads:
+
+Managed Pooling: Thread pool threads are managed and reused by the runtime, avoiding the overhead of creating and destroying threads frequently.
+Limited Control: With thread pool threads, you have less control over each thread’s lifecycle and priority.
+Advantages:
+
+Efficient Resource Use: Reuses threads, making it ideal for handling many short-lived tasks.
+Scalability: Automatically adjusts the number of threads based on workload.
+
+
