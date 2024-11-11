@@ -1,0 +1,7 @@
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMusicSytem\bin\Debug\ConsoleAppMusicSytem.exe.config
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMusicSytem\bin\Debug\ConsoleAppMusicSytem.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMusicSytem\bin\Debug\ConsoleAppMusicSytem.pdb
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMusicSytem\obj\Debug\ConsoleAppMusicSytem.csproj.AssemblyReference.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMusicSytem\obj\Debug\ConsoleAppMusicSytem.csproj.CoreCompileInputs.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMusicSytem\obj\Debug\ConsoleAppMusicSytem.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMusicSytem\obj\Debug\ConsoleAppMusicSytem.pdb

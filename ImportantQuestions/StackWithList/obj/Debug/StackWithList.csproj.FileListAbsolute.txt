@@ -1,0 +1,7 @@
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\StackWithList\bin\Debug\StackWithList.exe.config
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\StackWithList\bin\Debug\StackWithList.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\StackWithList\bin\Debug\StackWithList.pdb
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\StackWithList\obj\Debug\StackWithList.csproj.AssemblyReference.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\StackWithList\obj\Debug\StackWithList.csproj.CoreCompileInputs.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\StackWithList\obj\Debug\StackWithList.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\StackWithList\obj\Debug\StackWithList.pdb
