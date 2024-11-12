@@ -1,0 +1,7 @@
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppTransposeMatrix\bin\Debug\ConsoleAppTransposeMatrix.exe.config
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppTransposeMatrix\bin\Debug\ConsoleAppTransposeMatrix.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppTransposeMatrix\bin\Debug\ConsoleAppTransposeMatrix.pdb
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppTransposeMatrix\obj\Debug\ConsoleAppTransposeMatrix.csproj.AssemblyReference.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppTransposeMatrix\obj\Debug\ConsoleAppTransposeMatrix.csproj.CoreCompileInputs.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppTransposeMatrix\obj\Debug\ConsoleAppTransposeMatrix.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppTransposeMatrix\obj\Debug\ConsoleAppTransposeMatrix.pdb

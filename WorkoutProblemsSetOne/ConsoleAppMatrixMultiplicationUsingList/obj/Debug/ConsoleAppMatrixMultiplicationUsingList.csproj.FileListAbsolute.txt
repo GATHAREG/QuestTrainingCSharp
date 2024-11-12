@@ -1,0 +1,7 @@
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixMultiplicationUsingList\bin\Debug\ConsoleAppMatrixMultiplicationUsingList.exe.config
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixMultiplicationUsingList\bin\Debug\ConsoleAppMatrixMultiplicationUsingList.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixMultiplicationUsingList\bin\Debug\ConsoleAppMatrixMultiplicationUsingList.pdb
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixMultiplicationUsingList\obj\Debug\ConsoleAppMatrixMultiplicationUsingList.csproj.AssemblyReference.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixMultiplicationUsingList\obj\Debug\ConsoleAppMatrixMultiplicationUsingList.csproj.CoreCompileInputs.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixMultiplicationUsingList\obj\Debug\ConsoleAppMatrixMultiplicationUsingList.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixMultiplicationUsingList\obj\Debug\ConsoleAppMatrixMultiplicationUsingList.pdb

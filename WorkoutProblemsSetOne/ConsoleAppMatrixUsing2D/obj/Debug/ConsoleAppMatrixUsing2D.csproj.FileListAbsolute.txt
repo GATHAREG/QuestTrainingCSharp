@@ -1,0 +1,7 @@
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixUsing2D\bin\Debug\ConsoleAppMatrixUsing2D.exe.config
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixUsing2D\bin\Debug\ConsoleAppMatrixUsing2D.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixUsing2D\bin\Debug\ConsoleAppMatrixUsing2D.pdb
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixUsing2D\obj\Debug\ConsoleAppMatrixUsing2D.csproj.AssemblyReference.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixUsing2D\obj\Debug\ConsoleAppMatrixUsing2D.csproj.CoreCompileInputs.cache
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixUsing2D\obj\Debug\ConsoleAppMatrixUsing2D.exe
+C:\Users\Gatha Reghunath\source\repos\QuestEvaluation\ConsoleAppMatrixUsing2D\obj\Debug\ConsoleAppMatrixUsing2D.pdb
